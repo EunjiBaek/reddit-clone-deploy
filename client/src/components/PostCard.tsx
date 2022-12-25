@@ -88,7 +88,7 @@ const PostCard = ({
               <Link legacyBehavior href={`/r/${subName}`}>
                 <a>
                   <Image
-                    src="https://www.gravatar.com/avatar?d=mp&f=y"
+                    src={sub!.imageUrl}
                     alt="sub"
                     className="rounded-full cursor-pointer"
                     width={12}

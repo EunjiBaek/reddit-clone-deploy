@@ -35,6 +35,7 @@ const Home: NextPage = () => {
 
   const { data: topSubs } = useSWR<Sub[]>(address, fetcher);
   const [observedPost, setObservedPost] = useState("");
+  console.log("topSubs", topSubs);
 
   useEffect(() => {
     // 포스트가 없다면 return
@@ -97,7 +98,7 @@ const Home: NextPage = () => {
                 <Link legacyBehavior href={`/r/${sub.name}`}>
                   <a>
                     <Image
-                      src={sub.imageUrl}
+                      src={sub?.imageUrl}
                       className="rounded-full cursor-pointer"
                       alt="Sub"
                       width={24}

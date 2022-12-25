@@ -11,7 +11,7 @@ export interface Sub {
   name: string;
   title: string;
   description: string;
-  imageUrn: string;
+  imageUrl: string;
   bannerUrn: string;
   username: string;
   posts: Post[];
