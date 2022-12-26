@@ -10,7 +10,8 @@ import {
 } from "typeorm";
 import BaseEntity from "./Entity";
 import Sub from "./Sub";
-import { makeId, slugify } from "../utils/helper";
+import { makeId } from "../utils/helper";
+import { slugify } from "transliteration";
 import Vote from "./Vote";
 import { User } from "./User";
 import Comment from "./Comment";
